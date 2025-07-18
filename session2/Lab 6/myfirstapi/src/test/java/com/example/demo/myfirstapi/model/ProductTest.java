@@ -34,8 +34,8 @@ class ProductTest {
 
     @Test
     void testEqualsMethod(){
-        String expected = "Product{id=123456, name='Cheese', price=120.5}";
-        boolean equalsMethodResult = product.toString().equals(expected);
+        Product productX = new Product(123456L,"Cheese", 120.50);
+        boolean equalsMethodResult = product.equals(productX);
         assertTrue(equalsMethodResult);
     }
 
